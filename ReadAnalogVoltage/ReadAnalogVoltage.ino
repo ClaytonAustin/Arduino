@@ -10,6 +10,10 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/ReadAnalogVoltage
 */
 
+//programmer:Clayton Austin
+//Date:3/3/22
+
+
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
