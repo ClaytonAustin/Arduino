@@ -13,20 +13,25 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade
 */
 
-int led = 11;           // the PWM pin the LED is attached to
+int ledElleven = 11;           // the PWM pin the LED is attached to
+int ledTen = 10;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 
 // the setup routine runs once when you press reset:
 void setup() {
   // declare pin 11 to be an output:
-  pinMode(led, OUTPUT);
+  pinMode(ledElleven, OUTPUT);
+  // declare pin 10 to be an output:
+  pinMode(ledTen, OUTPUT);
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
   // set the brightness of pin 11:
-  analogWrite(led, brightness);
+  analogWrite(ledElleven, brightness);
+  // set the brightness of pin 10:
+  analogWrite(ledTen, brightness);
 
   // change the brightness for next time through the loop:
   brightness = brightness + fadeAmount;
